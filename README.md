@@ -2,10 +2,20 @@
 
 A simple CLI budget app written in Go.
 
+## Structure
+
+```
+cmd/budget/main.go        # entry point
+internal/
+├── budget/budget.go      # business logic (payday, trends)
+├── models/models.go      # domain types
+└── storage/storage.go    # JSON persistence
+```
+
 ## Usage
 
 ```
-go run .
+go run ./cmd/budget/
 ```
 
 ### Menu
